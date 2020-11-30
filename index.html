@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        
+        <title>Search</title>
+
+        <style>
+            .navbar-light .navbar-nav .nav-link {
+                color: rgba(0, 0, 0, 0.87);
+                text-decoration: none;
+                font-size: 13px;
+                font-family: arial,sans-serif;
+            }
+
+            .navbar-light .navbar-nav .nav-link:hover {
+                text-decoration: underline;
+            }
+
+            .image-centered {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+
+            .height {
+                height: 50vh;
+            }
+
+            .form {
+                position: relative;
+                box-shadow: 0 1px 6px rgba(32,33,36,.28);
+                border-color: rgba(223,225,229,0);
+                border-radius: 30px;
+            }
+
+            .form .fa-search {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                color: #9ca3af;
+            }
+
+            .form span {
+                position: absolute;
+                right: 17px;
+                top: 13px;
+                padding: 2px;
+                /* border-left: 1px solid #d1d5db */
+            }
+
+            .left-pan {
+                padding-left: 7px
+            }
+
+            .left-pan i {
+                padding-left: 10px
+            }
+
+            .form-input {
+                height: 55px;
+                text-indent: 40px;
+                border-radius: 30px;
+            }
+
+            .form-input:hover {
+                box-shadow: 0 4px 8px rgba(32,33,36,.28);
+                border: none;
+            }
+
+            .form-input:focus {
+                box-shadow: 0 4px 8px rgba(32,33,36,.28);
+                border: none;
+            }
+            .microphone {
+                color: #4086F4;
+                cursor: pointer;
+            }
+
+            .container {
+                margin-top: 3.5%;
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-top: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand navbar-light bg-white">
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link menulink" href="#">Image Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menulink" href="#">Advanced Search</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row height d-flex justify-content-center align-items-center">
+                <div class="col-12">
+                    <img src="googlelogo_color_272x92dp.png" class="image-centered" style="height: 92px; width: auto; transition: padding-top 0.4s ease,width 0.4s ease,height 0.4s ease;" /><br/><br/>
+                    
+                        <form action="https://google.com/search">
+
+                            <div class="form-row justify-content-center">
+                                <div class="form-group col-md-6">
+                                    <div class="form"> 
+                                        <i class="fa fa-search"></i> 
+                                        <input type="text" class="form-control form-input" name="q"> 
+                                        <span class="left-pan"><i class="fa fa-microphone microphone"></i></span> 
+                                    </div>
+                                </div>
+                            </div>  
+
+                            <div class="buttons">
+                                <div>
+                                    <input type="submit" class="btn btn-light" value="Google Search" aria-label="Google Search">
+                                    <button type="submit" class="btn btn-light" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI">I'm Feeling Lucky</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+        <div>
+            <img src="googlelogo_color_272x92dp.png" /><br/>
+            <form action="https://google.com/search">
+                <input type="text" name="q"><br/>
+                <input type="submit" class="btn btn-light" value="Google Search" aria-label="Google Search" name="btnK">
+                <button type="submit" class="btn btn-light" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI">I'm Feeling Lucky</button>
+            </form>
+        </div>
+        -->
+    </body>
+</html>
