@@ -2,11 +2,11 @@
 <html lang="en">
     <head>
 
-        <title>Google Search</title>
+        <title>Google Images</title>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles/index.css">   
+        <link rel="stylesheet" href="styles/image.css">   
 
     </head>
     <body>
@@ -15,7 +15,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link menulink" href="image.html">Image Search</a>
+                        <a class="nav-link menulink" href="index.html">Google Search</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link menulink" href="advanced.html">Advanced Search</a>
@@ -27,26 +27,38 @@
         <div class="container">
             <div class="row height d-flex justify-content-center align-items-center">
                 <div class="col-12">
-                    <img src="images/googlelogo_color_272x92dp.png" class="image-centered" title="Google" alt="Google logo" />
+                    <img src="images/googlelogo_color_272x92dp.png" class="image-centered" title="Google Images" alt="Google Images logo" />
+                    <p class="logo-subtext">images</p>
                     
                     <form action="https://google.com/search" class="search-form">
+
+                        <input type="hidden" name="tbm" value="isch"> <!-- necessary to search for image -->
 
                         <div class="form-row justify-content-center">
                             <div class="form-group col-md-6">
                                 <div class="form"> 
                                     <i class="fa fa-search search"></i> 
                                     <input type="text" class="form-control form-input" name="q"> 
-                                    <span class="left-pan"><i class="fa fa-microphone microphone" title="Search by voice"></i></span> 
+
+                                    <span class="left-pan">
+                                        
+                                        <i class="fa fa-camera camera pl-4" title="Search by image"></i>
+                                        <i class="fa fa-microphone microphone pl-4" title="Search by voice"></i>
+                                        <button class="search-button" type="submit"><i class="fa fa-search right-search pl-4"></i></button>
+                                        
+
+                                    </span> 
+                                    
                                 </div>
                             </div>
                         </div>  
-
+<!-- 
                         <div class="buttons">
                             <div>
                                 <input type="submit" class="btn btn-light" value="Google Search" aria-label="Google Search">
                                 <button type="submit" class="btn btn-light" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI">I'm Feeling Lucky</button>
                             </div>
-                        </div>
+                        </div> -->
 
                     </form>
                 </div>
