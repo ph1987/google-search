@@ -1,0 +1,35 @@
+.body {
+    font-family: arial,sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+    font-size: 13px;
+    font-family: arial,sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+.navbar-bg-grey {
+    background-color: #f1f1f1;
+}
+
+.google-logo {
+    width: 90px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.appbar {
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px;
+    font-weight: 400;
+}
+
+.gy3Eif{
+    border-bottom: 1px solid #ebebeb;
+}
